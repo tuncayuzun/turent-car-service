@@ -88,6 +88,6 @@ public interface CarApi {
             @ApiResponse(responseCode = "500", description = "Internal Server Error", content = @Content(schema = @Schema(implementation = Exception.class)))
     })
     @DeleteMapping(value = "/{carId}", produces = {"application/json;charset=utf-8"})
-    ResponseEntity<Void> deleteCar(@RequestHeader Map<String, String> header, @PathVariable(value = "carId") String carIdæ);
+    ResponseEntity<Void> deleteCar(@RequestHeader Map<String, String> header, @PathVariable(value = "carId") String carId);
 
 }

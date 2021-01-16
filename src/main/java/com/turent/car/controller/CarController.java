@@ -1,6 +1,7 @@
 package com.turent.car.controller;
 
 import com.turent.car.api.CarApi;
+import com.turent.car.exception.CarError;
 import com.turent.car.model.Car;
 import org.springframework.http.ResponseEntity;
 
@@ -30,7 +31,7 @@ public class CarController implements CarApi {
     }
 
     @Override
-    public ResponseEntity<Void> deleteCar(Map<String, String> header, String carIdæ) {
+    public ResponseEntity<Void> deleteCar(Map<String, String> header, String carId) {
         return null;
     }
 }
