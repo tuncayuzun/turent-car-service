@@ -24,7 +24,7 @@ public class CarExceptionHandler {
         return new ResponseEntity<>(carError, carError.getStatus());
     }
 
-    @ExceptionHandler(RuntimeException.class)
+    @ExceptionHandler(CarException.class)
     public ResponseEntity<CarError> handleCustomException(final HttpServletRequest httpServletRequest, final CarException carException) {
         CarError carError = new CarError();
         carError.setStatus(carException.getHttpStatus());

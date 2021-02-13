@@ -1,11 +1,9 @@
 package com.turent.car.model;
 
 import lombok.Data;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.UUID;
 
-@Document("Car")
 @Data
 public class Car {
     private UUID id;
@@ -16,6 +14,7 @@ public class Car {
     private String year;
     private String transmission;
     private String fuel;
+    private String licensePlate;
     private String baseAmount;
     private String depositAmount;
     private int minAgeOfDriver;
